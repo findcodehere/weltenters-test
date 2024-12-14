@@ -9,7 +9,6 @@ export async function POST(request: Request) {
         if (!code) {
             return NextResponse.json(
                 {
-                    status: 'fail',
                     message: "Request body is invalid. 'code' is required.",
                 },
                 { status: 400 }
@@ -20,7 +19,6 @@ export async function POST(request: Request) {
         if (code === 1234) {
             return NextResponse.json(
                 {
-                    status: 'success',
                     message: 'Verification successful.',
                 },
                 { status: 200 }
@@ -28,7 +26,6 @@ export async function POST(request: Request) {
         } else {
             return NextResponse.json(
                 {
-                    status: 'fail',
                     message: 'Invalid verification code.',
                 },
                 { status: 400 }
