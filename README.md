@@ -42,13 +42,26 @@
 
 ## C. **Preparation Before Starting**
 1. **Figma Link**  
-   - Access the provided **Figma link** to review the UI designs. (The link will be shared with you during the test.)
-
+   - Access the provided **Figma link** to review the UI designs. (The link will be shared with you upon request.) 
+   - https://www.figma.com/design/MrG620iW8A7lDRP04xUnWH/weltenters-test?node-id=2-2&m=dev&t=E7nQdgf9eBJCaC4X-1
+     
 2. **Request Access**  
-   - If you are unable to access the Figma file, request permission.
+   - If you are unable to access the Figma file, request permission as soon as possible.
 
-3. **Refer to Figma**  
+3. **Time Tracking**  
+   - Once you receive access to the Figma file, **start tracking your time**.  
+     - Record when you start and finish the task.  
+     - Accurately report the time taken to complete each task.
+
+4. **Refer to Figma**  
    - Follow the designs provided in Figma when implementing the pages.
+
+5. **Design and UX/UI Improvements**  
+   - If you identify any areas for improvement or enhancement in the provided design and UX/UI, you are allowed to make changes.  
+   - For any modifications made, **provide a clear explanation** of:  
+     - What was improved.  
+     - Why the change was necessary.  
+     - How it benefits the user experience.
 
 ---
 
@@ -73,30 +86,50 @@
     - **Success**: HTTP status `200` with the following JSON:
       ```json
       {
-        "message": "Verification successful"
+        "status": "success",
+        "message": "Verification successful."
       }
       ```
     - **Failure**: HTTP status `400` with the following JSON:
       ```json
       {
-        "message": "Invalid verification code." // or "Request body is invalid. 'code' is required."
+        "status": "fail",
+        "message": "Invalid verification code."
       }
       ```
 
 ---
 
-## E. **Submission Guidelines**
-1. **Git Workflow**  
+## E. **Time Tracking and Submission Guidelines**
+1. **Time Tracking**  
+   - Accurately record the time taken to complete each task:
+     - `/casting` Page: Start Time → End Time  
+     - `/contact` Page: Start Time → End Time  
+
+2. **Design or UX/UI Improvements**  
+   - If you made changes or enhancements to the provided design, explain the following in your PR:
+     - What improvements were made.  
+     - The reasoning behind the changes.  
+     - How the changes enhance usability or functionality.
+
+3. **Git Workflow**  
    - Work in a new branch created from your forked repository.  
    - Branch naming convention: `feature/[your-name]`.
 
-2. **Pull Request**  
+4. **Pull Request**  
    - Once your tasks are completed, push your branch and create a Pull Request (PR) to your forked repository.  
    - In the PR description, include:
      - A summary of the work you’ve done.
+     - Time taken for each task.
+     - Design/UX/UI improvements (if applicable).
      - Any issues faced and how they were resolved.
      - Suggestions for improvement, if any.
 
 ---
 
-**Note:** Make sure to adhere to Prettier formatting and follow the Figma designs closely. Focus on clean, maintainable code and properly handle API responses for the `/contact` page.
+**Note:**  
+- Follow the Figma designs closely.  
+- Focus on clean, maintainable code.  
+- Properly handle API responses for the `/contact` page.  
+- Record the time spent on each task for accuracy and transparency.  
+- If you improve the UX/UI, clearly document your changes and reasoning.
