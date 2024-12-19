@@ -71,8 +71,6 @@
 - Build the **/casting** page based on the Figma design.
 - **No REST API integration is required**; focus solely on creating the user interface.
 
----
-
 ### 2. **/contact Page Implementation**
 - Build the **/contact** page with the necessary REST API integration to handle contact submissions.  
 - **REST API Details**:
@@ -99,8 +97,13 @@
       ```
 
 ---
+## E. Style Guidelines
+- All styles must be written in SCSS and located under the /src/styles/ directory.
+- Follow the SCSS conventions and ensure all styles are modular and reusable.
+- Use variables, mixins, and functions wherever applicable to improve code maintainability and readability.
+- Import the SCSS files into your components or pages as needed.
 
-## E. **Time Tracking and Submission Guidelines**
+## F. **Time Tracking and Submission Guidelines**
 1. **Time Tracking**  
    - Accurately record the time taken to complete each task:
      - `/casting` Page: Start Time → End Time  
