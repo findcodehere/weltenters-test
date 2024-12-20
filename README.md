@@ -43,7 +43,7 @@
 ## C. **Preparation Before Starting**
 1. **Figma Link**  
    - Access the provided **Figma link** to review the UI designs. (The link will be shared with you upon request.) 
-   - https://www.figma.com/design/MrG620iW8A7lDRP04xUnWH/weltenters-test?node-id=2-2&m=dev&t=E7nQdgf9eBJCaC4X-1
+   - https://www.figma.com/design/ACuP2Jab656NAHQjPt3Nbp/Frontend-Developer-Test?node-id=2-2
      
 2. **Request Access**  
    - If you are unable to access the Figma file, request permission as soon as possible.
@@ -67,34 +67,9 @@
 
 ## D. **Tasks to Complete**
 
-### 1. **/casting Page Implementation**
+###  **/casting Page Implementation**
 - Build the **/casting** page based on the Figma design.
 - **No REST API integration is required**; focus solely on creating the user interface.
-
-### 2. **/contact Page Implementation**
-- Build the **/contact** page with the necessary REST API integration to handle contact submissions.  
-- **REST API Details**:
-  - Use the phone verification code **1234** for all requests.
-  - Send the verification request to the backend endpoint `/api/casting`.
-  - The request payload should follow this structure:
-    ```json
-    { "code": [entered verification code] }
-    ```
-  - The server will return the following responses:
-    - **Success**: HTTP status `200` with the following JSON:
-      ```json
-      {
-        "status": "success",
-        "message": "Verification successful."
-      }
-      ```
-    - **Failure**: HTTP status `400` with the following JSON:
-      ```json
-      {
-        "status": "fail",
-        "message": "Invalid verification code."
-      }
-      ```
 
 ---
 ## E. Style Guidelines
@@ -107,7 +82,6 @@
 1. **Time Tracking**  
    - Accurately record the time taken to complete each task:
      - `/casting` Page: Start Time → End Time  
-     - `/contact` Page: Start Time → End Time  
 
 2. **Design or UX/UI Improvements**  
    - If you made changes or enhancements to the provided design, explain the following in your PR:
@@ -133,6 +107,5 @@
 **Note:**  
 - Follow the Figma designs closely.  
 - Focus on clean, maintainable code.  
-- Properly handle API responses for the `/contact` page.  
 - Record the time spent on each task for accuracy and transparency.  
 - If you improve the UX/UI, clearly document your changes and reasoning.
